@@ -17,7 +17,7 @@ def animate(i):
     line.set_data(x, y)
     return line,
 
-anim = FuncAnimation(fig, animate, int_func=init,
+anim = FuncAnimation(fig, animate, init_func=init,
                                frames=200, interval=20, blit=True)
 
-anim.save('sine_wave.gif',write='imagemagick')
+anim.save('sine_wave.gif', writer='imagemagick')
